@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		663535881F3D06C500F97C81 /* TrackError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663535871F3D06C500F97C81 /* TrackError.swift */; };
+		6635358A1F3D0B0800F97C81 /* TracksJSONTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663535891F3D0B0800F97C81 /* TracksJSONTransformer.swift */; };
 		66A8AD011F3CFB1C004831EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A8ACFF1F3CFB1C004831EA /* AppDelegate.swift */; };
 		66A8AD021F3CFB1C004831EA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66A8AD001F3CFB1C004831EA /* Info.plist */; };
+		66A8AD101F3D03C3004831EA /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A8AD0F1F3D03C3004831EA /* Track.swift */; };
+		66A8AD161F3D048E004831EA /* TracksFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A8AD151F3D048E004831EA /* TracksFetcher.swift */; };
+		66A8AD181F3D04AF004831EA /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A8AD171F3D04AF004831EA /* Result.swift */; };
+		66A8AD1A1F3D05A9004831EA /* TracksJSONService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A8AD191F3D05A9004831EA /* TracksJSONService.swift */; };
 		C2DC82801F3BBB1E008A5938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DC827E1F3BBB1E008A5938 /* Main.storyboard */; };
 		C2DC82821F3BBB1E008A5938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2DC82811F3BBB1E008A5938 /* Assets.xcassets */; };
 		C2DC82851F3BBB1E008A5938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DC82831F3BBB1E008A5938 /* LaunchScreen.storyboard */; };
@@ -17,8 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		663535871F3D06C500F97C81 /* TrackError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrackError.swift; path = ArchitectureBasics/Networking/TrackError.swift; sourceTree = SOURCE_ROOT; };
+		663535891F3D0B0800F97C81 /* TracksJSONTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksJSONTransformer.swift; sourceTree = "<group>"; };
 		66A8ACFF1F3CFB1C004831EA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ArchitectureBasics/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		66A8AD001F3CFB1C004831EA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ArchitectureBasics/Info.plist; sourceTree = SOURCE_ROOT; };
+		66A8AD0F1F3D03C3004831EA /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		66A8AD151F3D048E004831EA /* TracksFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksFetcher.swift; sourceTree = "<group>"; };
+		66A8AD171F3D04AF004831EA /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Result.swift; path = ArchitectureBasics/Models/Result.swift; sourceTree = SOURCE_ROOT; };
+		66A8AD191F3D05A9004831EA /* TracksJSONService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksJSONService.swift; sourceTree = "<group>"; };
 		C2DC82771F3BBB1E008A5938 /* ArchitectureBasics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchitectureBasics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2DC827F1F3BBB1E008A5938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2DC82811F3BBB1E008A5938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,9 +50,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66A8AD111F3D0434004831EA /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C2DC828C1F3BBF33008A5938 /* TracksTableViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		66A8AD121F3D0449004831EA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C2DC828E1F3BC780008A5938 /* TrackTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		66A8AD131F3D0455004831EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				66A8AD0F1F3D03C3004831EA /* Track.swift */,
+				66A8AD151F3D048E004831EA /* TracksFetcher.swift */,
+				663535891F3D0B0800F97C81 /* TracksJSONTransformer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		66A8AD141F3D0472004831EA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				66A8AD191F3D05A9004831EA /* TracksJSONService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		C229B9181F3CF1730075FAF0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				66A8AD111F3D0434004831EA /* View Controller */,
+				66A8AD121F3D0449004831EA /* Cells */,
 				C2DC827E1F3BBB1E008A5938 /* Main.storyboard */,
 				C2DC82811F3BBB1E008A5938 /* Assets.xcassets */,
 				C2DC82831F3BBB1E008A5938 /* LaunchScreen.storyboard */,
@@ -53,6 +101,8 @@
 			children = (
 				66A8ACFF1F3CFB1C004831EA /* AppDelegate.swift */,
 				66A8AD001F3CFB1C004831EA /* Info.plist */,
+				66A8AD171F3D04AF004831EA /* Result.swift */,
+				663535871F3D06C500F97C81 /* TrackError.swift */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -76,10 +126,10 @@
 		C2DC82791F3BBB1E008A5938 /* ArchitectureBasics */ = {
 			isa = PBXGroup;
 			children = (
+				66A8AD141F3D0472004831EA /* Networking */,
 				C229B9191F3CF18D0075FAF0 /* Supporting */,
 				C229B9181F3CF1730075FAF0 /* UI */,
-				C2DC828C1F3BBF33008A5938 /* TracksTableViewController.swift */,
-				C2DC828E1F3BC780008A5938 /* TrackTableViewCell.swift */,
+				66A8AD131F3D0455004831EA /* Models */,
 			);
 			path = ArchitectureBasics;
 			sourceTree = "<group>";
@@ -156,9 +206,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6635358A1F3D0B0800F97C81 /* TracksJSONTransformer.swift in Sources */,
+				66A8AD181F3D04AF004831EA /* Result.swift in Sources */,
 				66A8AD011F3CFB1C004831EA /* AppDelegate.swift in Sources */,
+				663535881F3D06C500F97C81 /* TrackError.swift in Sources */,
 				C2DC828F1F3BC780008A5938 /* TrackTableViewCell.swift in Sources */,
+				66A8AD1A1F3D05A9004831EA /* TracksJSONService.swift in Sources */,
 				C2DC828D1F3BBF33008A5938 /* TracksTableViewController.swift in Sources */,
+				66A8AD101F3D03C3004831EA /* Track.swift in Sources */,
+				66A8AD161F3D048E004831EA /* TracksFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
