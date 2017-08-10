@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C2DC827B1F3BBB1E008A5938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC827A1F3BBB1E008A5938 /* AppDelegate.swift */; };
+		66A8AD011F3CFB1C004831EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A8ACFF1F3CFB1C004831EA /* AppDelegate.swift */; };
+		66A8AD021F3CFB1C004831EA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66A8AD001F3CFB1C004831EA /* Info.plist */; };
 		C2DC82801F3BBB1E008A5938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DC827E1F3BBB1E008A5938 /* Main.storyboard */; };
 		C2DC82821F3BBB1E008A5938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2DC82811F3BBB1E008A5938 /* Assets.xcassets */; };
 		C2DC82851F3BBB1E008A5938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DC82831F3BBB1E008A5938 /* LaunchScreen.storyboard */; };
@@ -16,12 +17,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		66A8ACFF1F3CFB1C004831EA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ArchitectureBasics/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		66A8AD001F3CFB1C004831EA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ArchitectureBasics/Info.plist; sourceTree = SOURCE_ROOT; };
 		C2DC82771F3BBB1E008A5938 /* ArchitectureBasics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchitectureBasics.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2DC827A1F3BBB1E008A5938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2DC827F1F3BBB1E008A5938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2DC82811F3BBB1E008A5938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2DC82841F3BBB1E008A5938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C2DC82861F3BBB1E008A5938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2DC828C1F3BBF33008A5938 /* TracksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksTableViewController.swift; sourceTree = "<group>"; };
 		C2DC828E1F3BC780008A5938 /* TrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,8 +51,8 @@
 		C229B9191F3CF18D0075FAF0 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
-				C2DC827A1F3BBB1E008A5938 /* AppDelegate.swift */,
-				C2DC82861F3BBB1E008A5938 /* Info.plist */,
+				66A8ACFF1F3CFB1C004831EA /* AppDelegate.swift */,
+				66A8AD001F3CFB1C004831EA /* Info.plist */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -141,6 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66A8AD021F3CFB1C004831EA /* Info.plist in Resources */,
 				C2DC82851F3BBB1E008A5938 /* LaunchScreen.storyboard in Resources */,
 				C2DC82821F3BBB1E008A5938 /* Assets.xcassets in Resources */,
 				C2DC82801F3BBB1E008A5938 /* Main.storyboard in Resources */,
@@ -154,7 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2DC827B1F3BBB1E008A5938 /* AppDelegate.swift in Sources */,
+				66A8AD011F3CFB1C004831EA /* AppDelegate.swift in Sources */,
 				C2DC828F1F3BC780008A5938 /* TrackTableViewCell.swift in Sources */,
 				C2DC828D1F3BBF33008A5938 /* TracksTableViewController.swift in Sources */,
 			);
